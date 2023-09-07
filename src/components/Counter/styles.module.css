@@ -1,0 +1,42 @@
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.counter > div {
+    margin-top: 65px;
+}
+
+.taskcreated {
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    gap: 0.5rem;
+}
+  
+.taskcreated span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center;
+    border-radius: 999px;
+}
+
+.taskdone {
+    display: flex;
+    align-items: center;
+    color: var(--purple);
+    gap: 0.5rem;
+}
+
+.taskdone span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center;
+    border-radius: 999px;
+}

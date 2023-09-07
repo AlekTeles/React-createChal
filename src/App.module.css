@@ -11,73 +11,13 @@
   height: 4rem;
 }
 
-.navbar {
-  margin: -1.75rem;
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  padding: 0px 1.5rem;
-}
-
-.navbar input {
-  flex-grow: 1;
-  background: var(--gray-500);
-  width: 39.875rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: var(--gray-100);
-  padding-left: 16px;
-  border: 1px solid transparent;
-  transition: all .2s ease-in;
-}
-
-.navbar input:hover {
-  border-color: var(--blue-dark);
-  cursor: pointer;
-}
-
-.navbar button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--blue-dark);
-  color: var(--gray-100);
-  border-radius: 8px;
-  min-width: 5.625rem;
-  height: 3.25rem;
-  gap: 0.25rem;
-  line-height: 140%;
-  font-size: 0.875rem;
-  border: none;
-  transition: all .2s ease-in;
-
-}
-
-.navbar button:hover {
-  background-color: #175377;
-  cursor: pointer;
-}
-
-
 .wrapper {
   max-width: 60rem;
   margin: 0px auto;
   padding: 0 1rem;
-  display: grid;
   flex-direction: column;
-  align-items: flex-center;
+  /* align-items: flex-center; */
   display: flex;
-}
-
-.counter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.counter > div {
-  margin-top: 65px;
 }
 
 .mainlandia {
@@ -85,39 +25,6 @@
   width: 50rem;
   height: 4.5rem;
   display: flex;
-  
-}
-
-.taskcreated {
-  display: flex;
-  align-items: center;
-  color: var(--blue);
-  gap: 0.5rem;
-}
-
-.taskcreated span {
-  background: var(--gray-400);
-  color: var(--gray-200);
-  padding: 6px 12px;
-  display: flex;
-  justify-content: center;
-  border-radius: 999px;
-}
-
-.taskdone {
-  display: flex;
-  align-items: center;
-  color: var(--purple);
-  gap: 0.5rem;
-}
-
-.taskdone span {
-  background: var(--gray-400);
-  color: var(--gray-200);
-  padding: 6px 12px;
-  display: flex;
-  justify-content: center;
-  border-radius: 999px;
 }
 
 .mainlandia article {
@@ -130,23 +37,7 @@
   gap: 1rem;
 }
 
-.task {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  color: var(--gray-100);
-  justify-content: space-between;
-}
 
-.task div {
-  display: flex;
-  align-items: center;
-}
-
-.task div strong {
-  margin-left: 12px;
-
-}
 
 @media (max-width: 768px) {
 

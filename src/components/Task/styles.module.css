@@ -1,0 +1,17 @@
+.task {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    color: var(--gray-100);
+    justify-content: space-between;
+  }
+  
+  .task div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task div strong {
+    margin-left: 12px;
+  
+  }

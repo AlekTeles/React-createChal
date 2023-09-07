@@ -1,0 +1,46 @@
+.navbar {
+  margin: -1.75rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0px 1.5rem;
+}
+
+.navbar input {
+  flex-grow: 1;
+  background: var(--gray-500);
+  width: 39.875rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--gray-100);
+  padding-left: 16px;
+  border: 1px solid transparent;
+  transition: all .2s ease-in;
+}
+
+.navbar input:hover {
+  border-color: var(--blue-dark);
+  cursor: pointer;
+}
+
+.navbar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  min-width: 5.625rem;
+  height: 3.25rem;
+  gap: 0.25rem;
+  line-height: 140%;
+  font-size: 0.875rem;
+  border: none;
+  transition: all .2s ease-in;
+
+}
+
+.navbar button:hover {
+  background-color: #175377;
+  cursor: pointer;
+}

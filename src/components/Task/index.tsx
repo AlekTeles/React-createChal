@@ -1,14 +1,23 @@
-import { Circle, Trash } from "phosphor-react";
+import { CheckCircle, Circle, Trash } from "phosphor-react";
 import styles from './styles.module.css'
 
-export function Task() {
+export interface ITaskProps {
+  isDone: boolean;
+  name:   string;
+}
+
+export function Task({ isDone, name } : ITaskProps) {
     return (
         <article className={styles.task}>
             <div>
-              <Circle size={20} color="#4EA8DE" />
-
+              {
+                isDone 
+                  ? <CheckCircle size={20} color="#4EA8DE" /> 
+                  : <Circle size={20} color="#4EA8DE" /> 
+              }
+              
               <strong> 
-                turpis turpis semper. Duis vel sed fames integer.
+                {name}
               </strong>
 
             </div>

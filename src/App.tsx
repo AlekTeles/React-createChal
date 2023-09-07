@@ -5,10 +5,13 @@ import './global.css'
 import { CreateTaskForm } from './components/CreateTaskForm'
 import { Counter } from './components/Counter'
 import { Task } from './components/Task'
-
-
+import { useState } from 'react'
+import { ITask, taskListData } from './models'
 
 function App() {
+  const [taskList, setTaskList] = useState<ITask[]>(taskListData)
+
+  console.log(taskList);
 
   return (
     <div>
@@ -24,11 +27,13 @@ function App() {
 
         <main className={styles.mainlandia}>
 
-          <Task/>
-          <Task/>
-          <Task/>
-          <Task/>
-
+          {
+            taskList.map(
+              task => {
+                return <Task key={task.id} isDone={task.isDone} name={task.name}/>
+              }
+            )
+          }
 
         </main>
       </div>
@@ -37,3 +42,7 @@ function App() {
 }
 
 export default App
+
+
+
+
